@@ -6,6 +6,10 @@ import itertools
 from .registry import register_node, scrape_module
 from .types import *
 
+# test importing from comfy
+import comfy.model_management
+import comfy.sample
+
 
 binary_ops = {v.__name__: v for v in itertools.chain(
     scrape_module(operator, 2),

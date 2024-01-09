@@ -1,0 +1,13 @@
+{
+    "prognodes_0_BinaryOp": "All binary operators from Python stdlib.",
+    "prognodes_0_Format": "Performs string replacement using the standard Python format() method.",
+    "prognodes_0_GetItem": "Selects a key from a collection ie a dict.",
+    "prognodes_0_Join": "Joins an interable of strings into a single string.",
+    "prognodes_0_Literal": "Allows defining a literal value directly in Python code.",
+    "prognodes_0_MapJoin": "I can't remember what this does. :(",
+    "prognodes_0_MappedBinaryOp": "Map a binary operation to an iterable.",
+    "prognodes_0_MappedUnaryOp": "Map a unary operation to an iterable.",
+    "prognodes_0_Print": "Prints the str() or repr() of the input.",
+    "prognodes_0_Switch": "A switch that selects between the two inputs.",
+    "prognodes_0_UnaryOp": "All unary operators from Python stdlib."
+}

@@ -1,5 +1,4 @@
 import typing
-import ast
 
 from pydantic import BaseModel
 
