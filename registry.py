@@ -25,6 +25,10 @@ def set_pack_options(uid: str, category: str = None):
     PACK_UID = uid
 
 
+def get_nodes():
+    return {k: v.exec.__doc__ for k, v in NODE_CLASS_MAPPINGS.items()}
+
+
 def register_node(category=None, version=0, display_name=None, output=False):
     def decorator(f):
         node_attrs = {}
