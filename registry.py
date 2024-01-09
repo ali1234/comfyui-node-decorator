@@ -79,8 +79,11 @@ def register_node(category=None, version=0, display_name=None, output=False):
 
         node_attrs['exec'] = staticmethod(exec)
 
-        node_class = type(f.__name__, (NodeTemplate,), node_attrs)
+        if PACK_UID is None:
+            raise Exception("PACK_UID is not set. Call set_pack_options in __init__.py to set it.")
+
         unique_name = f'{PACK_UID}_{version}_{f.__name__}'
+        node_class = type(unique_name, (NodeTemplate,), node_attrs)
         NODE_CLASS_MAPPINGS[unique_name] = node_class
         if display_name is not None:
             NODE_DISPLAY_NAME_MAPPINGS[unique_name] = display_name
